@@ -1,0 +1,45 @@
+strict digraph {
+graph [bgcolor=transparent];
+node [penwidth=4, shape=circle];
+edge [penwidth=2];
+
+"0" [color="#ffebe2", label="<unknown file> [libc-2.28.so]:0" shape=oval];
+"5" [color="#fff5f0", label="1391:bitalignDC" shape=oval];
+"6" [color="#fff5f0", label="align.c:931" shape=oval];
+"7" [color="#fff5f0", label="align.c:932" shape=oval];
+"8" [color="#fff5f0", label="align.c:944" shape=oval];
+"9" [color="#67000d", label="<unknown file> [libc-2.28.so]:0" shape=oval];
+"10" [color="#ffeee7", label="17:generateGraphFromGFA" shape=oval];
+"11" [color="#fff5f0", label="graph.c:56" shape=oval];
+"12" [color="#fff5f0", label="graph.c:58" shape=oval];
+"13" [color="#fff5f0", label="graph.c:70" shape=oval];
+"14" [color="#fff5f0", label="graph.c:74" shape=oval];
+"15" [color="#fff5f0", label="graph.c:81" shape=oval];
+"16" [color="#fff5f0", label="graph.c:83" shape=oval];
+"17" [color="#fff5f0", label="graph.c:87" shape=oval];
+"18" [color="#fff5f0", label="graph.c:91" shape=oval];
+"19" [color="#fff5f0", label="graph.c:101" shape=oval];
+"20" [color="#fff2eb", label="graph.c:113" shape=oval];
+"21" [color="#fff5f0", label="graph.c:125" shape=oval];
+"22" [color="#fb7b5b", label="<unknown file> [libc-2.28.so]:0" shape=oval];
+"64" [color="#fff5f0", label="[a.out]:0" shape=oval];
+
+"5" -> "6";
+"5" -> "7";
+"5" -> "8";
+"5" -> "9";
+"10" -> "11";
+"10" -> "12";
+"10" -> "13";
+"10" -> "14";
+"10" -> "15";
+"10" -> "16";
+"10" -> "17";
+"10" -> "18";
+"10" -> "19";
+"10" -> "20";
+"10" -> "21";
+"10" -> "22";
+"10" -> "64";
+
+}

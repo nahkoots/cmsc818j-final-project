@@ -1,0 +1,39 @@
+strict digraph {
+graph [bgcolor=transparent];
+node [penwidth=4, shape=circle];
+edge [penwidth=2];
+
+"0" [color="#fff5f0", label="1400:bitalignDC" shape=oval];
+"1" [color="#fff5f0", label="align.c:936" shape=oval];
+"2" [color="#fee3d6", label="17:generateGraphFromGFA" shape=oval];
+"3" [color="#fff5f0", label="graph.c:58" shape=oval];
+"4" [color="#fff5f0", label="graph.c:60" shape=oval];
+"5" [color="#fff5f0", label="graph.c:81" shape=oval];
+"6" [color="#fff4ef", label="graph.c:83" shape=oval];
+"7" [color="#fff5f0", label="graph.c:90" shape=oval];
+"8" [color="#fff4ef", label="graph.c:91" shape=oval];
+"9" [color="#fff5f0", label="graph.c:101" shape=oval];
+"10" [color="#fee8de", label="graph.c:113" shape=oval];
+"11" [color="#fff5f0", label="graph.c:116" shape=oval];
+"12" [color="#fff5f0", label="graph.c:125" shape=oval];
+"13" [color="#67000d", label="<unknown file> [libc-2.28.so]:0" shape=oval];
+"57" [color="#fff5f0", label="27:deleteGraph" shape=oval];
+"58" [color="#fff5f0", label="graph.c:206" shape=oval];
+"59" [color="#fed8c7", label="<unknown file> [libc-2.28.so]:0" shape=oval];
+
+"0" -> "1";
+"2" -> "3";
+"2" -> "4";
+"2" -> "5";
+"2" -> "6";
+"2" -> "7";
+"2" -> "8";
+"2" -> "9";
+"2" -> "10";
+"2" -> "11";
+"2" -> "12";
+"2" -> "13";
+"57" -> "58";
+"57" -> "59";
+
+}

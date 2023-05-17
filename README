@@ -1,0 +1,12 @@
+README
+This repository contains modifications to improve the performance of SeGraM (https://github.com/CMU-SAFARI/SeGraM) as well as a Python script to evaluate and 
+performance data collected by HPCToolkit.
+
+Metrics for the project can be generated as follows:
+1. Clone the repository by running `git clone https://github.com/nahkoots/cmsc818j-final-project`.
+2. Build the BitAlign executable by running `gcc -lm main.c -o bitalign`.
+3. Create an hpcstruct file (to be used by HPCToolkit) by running `hpcstruct bitalign`.
+4. Run the code with hpcrun as follows: `mpirun -np 1 hpcrun ./a.out`. If you're running this code on a cluster, you should run this step as a scheduled job (i.e. not from a login node). The sbatch file used to do this is provided in the repository (`run-bitalign.sh`), although you may need to modify it to work on your system.
+5. Step 4 will have generated a directory with a name similar to `hpctoolkit-bitalign-measurements-2525385` that contains measurements collected by HPCToolkit. Generate a database directory with hpcprof by running `mpirun -np 1 hpcprof-mpi --metric-db=yes -S bitalign.hpcstruct -I . <your measurements directory>`.
+6. Use the provided Python script to show performance measurements by updating analysis.py to contain your database folders and running `python3 analysis.py`.
+
